@@ -10,7 +10,7 @@ class User(Base):
     name = Column(String, nullable = True)
     email = Column(String, unique=True)
     username = Column(String, unique=True)
-    mobile = Column(Integer) 
+    mobile = Column(Integer, unique = True) 
 
     todo = relationship("Todo", back_populates="user", cascade="all, delete-orphan")
 
