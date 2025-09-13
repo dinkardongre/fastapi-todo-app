@@ -4,13 +4,13 @@ from app.utils.db import Base
 
 
 class User(Base):
-    __tablename__ = "user"
+    __tablename__ = "user" 
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String, nullable = True)
     email = Column(String, unique=True)
     username = Column(String, unique=True)
-    mobile = Column(Integer, nullable=True) 
+    mobile = Column(Integer) 
 
     todo = relationship("Todo", back_populates="user", cascade="all, delete-orphan")
 
