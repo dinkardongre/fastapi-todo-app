@@ -1,8 +1,3 @@
-# model
-# username, email, username, mobile,
-# todd -
-# title, description, peririty, start date, end date,
-# user_
 from sqlalchemy import Column, String, Integer, ForeignKey, Date
 from sqlalchemy.orm import relationship
 from utils.db import Base
