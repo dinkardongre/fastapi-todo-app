@@ -1,8 +1,8 @@
 from fastapi import FastAPI
-from utils.db import get_db
+from app.utils.db import get_db
 from sqlalchemy.orm import Session
-from Todo.router import todoRouter, userRouter
-from utils.db import Base, engine
+from app.Todo.router import todoRouter, userRouter
+from app.utils.db import Base, engine
 
 
 Base.metadata.create_all(engine)

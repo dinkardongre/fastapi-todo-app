@@ -1,8 +1,8 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from utils.db import get_db
-from Todo.dtos import UserSchema, TodoSchema
-from Todo.controller import (
+from app.utils.db import get_db
+from app.Todo.dtos import UserSchema, TodoSchema
+from app.Todo.controller import (
     getUser, getTodosByUser, createUser, updateUser, deleteUser,
     getTodos, createTodo, updateTodo, deleteTodo
 )

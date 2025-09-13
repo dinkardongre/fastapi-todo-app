@@ -1,7 +1,7 @@
 from sqlalchemy.orm import Session
 from fastapi import HTTPException, status
-from Todo.dtos import UserSchema, TodoSchema
-from Todo.models import User, Todo
+from app.Todo.dtos import UserSchema, TodoSchema
+from app.Todo.models import User, Todo
 
 
 def getUser(db: Session, id: int = None):
